@@ -163,27 +163,28 @@ export default function OverrideDefaultFunction() {
       />
 
       <h5 className="_sub-title mt-16">Custom Header Component's Props</h5>
-
-      <table className="mt-4 w-full overflow-auto border-separate border-spacing-4">
-        <thead>
-          <tr>
-            <th>Props</th>
-            <th>Default Value</th>
-            <th>Description</th>
-            <th>Example</th>
-          </tr>
-        </thead>
-        <tbody>
-          {CUSTOM_HEADER_PROPS.map((prop, i) => (
-            <tr key={"prop_" + i}>
-              <td>{prop.name}</td>
-              <td>{prop.defaultValue}</td>
-              <td>{prop.description}</td>
-              <td>{prop.example}</td>
+      <div className="mt-4 overflow-auto">
+        <table className="mt-4 w-full min-w-[1000px] border-separate border-spacing-4">
+          <thead>
+            <tr>
+              <th>Props</th>
+              <th>Default Value</th>
+              <th>Description</th>
+              <th>Example</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {CUSTOM_HEADER_PROPS.map((prop, i) => (
+              <tr key={"prop_" + i}>
+                <td>{prop.name}</td>
+                <td>{prop.defaultValue}</td>
+                <td>{prop.description}</td>
+                <td>{prop.example}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
 
       <Note>
         Instead of hiding the header using "isHideHeader" and creating your own
@@ -211,26 +212,28 @@ export default function OverrideDefaultFunction() {
       />
 
       <h5 className="_sub-title mt-16">Override Design Component's Props</h5>
-      <table className="mt-4 w-full overflow-auto border-separate border-spacing-4">
-        <thead>
-          <tr>
-            <th>Props</th>
-            <th>Default Value</th>
-            <th>Description</th>
-            <th>Example</th>
-          </tr>
-        </thead>
-        <tbody>
-          {OVERRIDE_FULL_DESIGN_PROPS.map((prop, i) => (
-            <tr key={"prop_" + i}>
-              <td>{prop.name}</td>
-              <td>{prop.defaultValue}</td>
-              <td>{prop.description}</td>
-              <td>{prop.example}</td>
+      <div className="mt-4 overflow-auto">
+        <table className="mt-4 w-full min-w-[1000px] border-separate border-spacing-4">
+          <thead>
+            <tr>
+              <th>Props</th>
+              <th>Default Value</th>
+              <th>Description</th>
+              <th>Example</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {OVERRIDE_FULL_DESIGN_PROPS.map((prop, i) => (
+              <tr key={"prop_" + i}>
+                <td>{prop.name}</td>
+                <td>{prop.defaultValue}</td>
+                <td>{prop.description}</td>
+                <td>{prop.example}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
