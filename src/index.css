@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  ._base-layout {
+    @apply px-2 md:px-4 max-w-[1240px] mx-auto;
+  }
+
+  ._title {
+    @apply text-[22px] md:text-[26px] font-semibold text-gray-900;
+  }
+
+  ._sub-title {
+    @apply text-[20px] md:text-[22px] font-semibold text-gray-800;
+  }
+
+  ._description {
+    @apply text-[18px] md:text-[20px] leading-[38px] font-medium text-gray-800;
+  }
+}
+
+
+@layer base {
+  th {
+    @apply py-4 text-[16px] text-left font-medium whitespace-nowrap text-gray-600 border-y-[1px] border-gray-100;
+  }
+
+  td {
+    @apply py-4 text-[16px] text-left font-medium text-gray-700 border-b border-gray-200;
+  }
+}
