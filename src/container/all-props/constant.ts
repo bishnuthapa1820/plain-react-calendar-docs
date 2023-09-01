@@ -33,7 +33,7 @@ export const ALL_PROPS: PropertyType[] = [
     name: "maxDate",
     defaultValue: "Not applied",
     description:
-      "Maximum date. If you set or pass data on the props, a user cannot select a greater date then this date.",
+      "Maximum date. If you set or pass date on the props, a user cannot select a greater date then this date.",
     example: `maxDate is like "2040-09-30"`,
   },
   {
@@ -54,7 +54,7 @@ export const ALL_PROPS: PropertyType[] = [
     name: "onYearChange",
     defaultValue: "Not applied",
     description:
-      "If you need to fire (run) a function every time when a user changes the calendar's year, you can pass a function with a string parameter.",
+      "If you need to fire (run) a function every time when a user changes the calendar's year, you can pass a function with a string parameter (string date).",
     example: `onYearChange={(date)=> {}}. Here date will be the same string as shown on the calendar's header.`,
   },
   {
@@ -82,7 +82,7 @@ export const ALL_PROPS: PropertyType[] = [
   {
     name: "dayOffList",
     defaultValue: "not applied",
-    description: `If you need to set the day/s as off day/s like (Sunday and Monday), you can pass a list of enum to dayOffList. When you pass dayOffList, the calendar by default sets read color text to all dates that fall on day off. dayOffList enum will be "su", "mo", "tu", "we", "th", "fr", "sa".`,
+    description: `If you need to set the day/s as off day/s like (Sunday and Monday), you can pass a list of enum to dayOffList. When you pass dayOffList, the calendar by default sets red color to all dates that fall on day off. dayOffList enum will be "su", "mo", "tu", "we", "th", "fr", "sa".`,
     example: `You can pass a list of enums to dayOffList like dayOffList={["su", "mo"]}. This will make text color red to all days that fall in the day off list`,
   },
   {

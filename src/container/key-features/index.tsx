@@ -13,7 +13,12 @@ const features: string[] = [
 export default function KeyFeatures() {
   return (
     <div>
-      <h2 className="_title">Plain React Calendar</h2>
+      <h2 className="_title">
+        Plain React Calendar{" "}
+        <span className="p-2 text-[14px] font-semibold rounded-lg text-blue-500 bg-blue-100">
+          New Version: 1.1.0
+        </span>{" "}
+      </h2>
       <p className="_description mt-4">
         It is a versatile solution that brings effortless customization and a
         wealth of features to your projects. With a strong focus on stability,
@@ -21,7 +26,11 @@ export default function KeyFeatures() {
         user-friendly experience. Whether you're a seasoned developer or just
         starting out, our simple documentation ensures easy integration. Elevate
         your applications with the power of Plain React Library and discover a
-        new level of simplicity and control in date management.
+        new level of simplicity and control in date management.{" "}
+        <span className="px-[1px] font-medium text-gray-900 bg-yellow-200">
+          From version 1.1.0, the Plain React Calendar is now compatible with
+          Next js.
+        </span>
       </p>
 
       <h2 className="_title mt-12">Key Features</h2>

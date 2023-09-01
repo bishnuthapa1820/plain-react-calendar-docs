@@ -62,7 +62,7 @@ export default function OverrideDefaultFunction() {
           alt="override-css"
           className="mt-4 rounded-sm"
         />
-        <Note className="mt-4">
+        <Note className="mt-8">
           The Plain React Calendar comes with its own set of default CSS styles.
           Should you decide to override these styles, please be aware that your
           modifications will entirely substitute the default appearance. In
@@ -87,12 +87,12 @@ export default function OverrideDefaultFunction() {
         alt="override-css"
         className="mt-4 rounded-sm"
       />
-      <Note className="mt-4">
+      <Note className="mt-8">
         In the example above, we are customizing the default styles of the
-        header. The Plain React Calendar applies "header" class name as a
-        default style, but it also applies "comHeader" class name, which cannot
-        be overridden. All the class names that have "com" prefix cannot be
-        overridden.
+        header. The Plain React Calendar applies "__prc_opt_header" class name
+        as a default style, but it also applies "__prc_com_header" class name,
+        which cannot be overridden. All the class names that have "__prc_com_"
+        prefix cannot be overridden.
       </Note>
 
       <h5 className="_sub-title mt-16">
@@ -114,7 +114,7 @@ export default function OverrideDefaultFunction() {
         alt="override-css"
         className="mt-4 rounded-sm"
       />
-      <Note className="mt-4">
+      <Note className="mt-8">
         This method allows you to replace the default styles of all elements.
         The names of the elements and their respective positions within the
         calendar have been illustrated earlier (in the CSS design pattern and
@@ -122,23 +122,21 @@ export default function OverrideDefaultFunction() {
         styles on{" "}
         <a
           target="_blank"
-          href="https://github.com/bishnuthapa1820/plain-react-calendar/blob/main/src/container/plain-react-calendar/styles/index.module.css"
+          href="https://github.com/bishnuthapa1820/plain-react-calendar/blob/main/src/index.css"
           className="text-blue-500"
         >
           GitHub.
         </a>{" "}
-        But you might feel it's a little bit of a strength because to keep
-        things simple, we just remove the prefix "com" and "opt" in all the
-        examples above. It's important to remember that all CSS class names with
-        the "com" prefix are mandatory class names, thus they cannot be
-        overridden. Conversely, class names beginning with the "opt" prefix
-        represent default (optional) styles directly applied by the Plain React
-        Calendar. These can be overridden by specifying the corresponding names
-        using key-value pairs within the classNames prop. You can identify the
-        styling class names for the header as "comHeader" and "optHeader" within
-        the styles. The "comHeader" class name is mandatory, while the
-        "optHeader" class name can be represented simply as "header" in the
-        classnames object and can be modified.
+        It's important to remember that all CSS class names with the
+        "__prc_com_" prefix are mandatory class names, thus they cannot be
+        overridden. Conversely, class names beginning with the "__prc_opt_"
+        prefix represent default (optional) styles directly applied by the Plain
+        React Calendar. These can be overridden by specifying the corresponding
+        names using key-value pairs within the classNames prop. You can identify
+        the styling class names for the header as "__prc_com_header" and
+        "__prc_opt_header" within the styles. The "__prc_com_header" class name
+        is mandatory, while the "__prc_opt_header" class name can be represented
+        simply as "header" in the classnames object and can be modified.
       </Note>
 
       <h4 className="_title mt-16">Override Full Header Section</h4>
@@ -186,7 +184,7 @@ export default function OverrideDefaultFunction() {
         </table>
       </div>
 
-      <Note>
+      <Note className="mt-8">
         Instead of hiding the header using "isHideHeader" and creating your own
         component for your custom header, you can use "customHeader" prop to
         fully customize your header section. The main benefit of using it is
