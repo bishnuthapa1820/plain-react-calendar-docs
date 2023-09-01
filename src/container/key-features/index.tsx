@@ -16,7 +16,7 @@ export default function KeyFeatures() {
       <h2 className="_title">
         Plain React Calendar{" "}
         <span className="p-2 text-[14px] font-semibold rounded-lg text-blue-500 bg-blue-100">
-          New Version: 1.1.0
+          New Version: 1.1.1
         </span>{" "}
       </h2>
       <p className="_description mt-4">
@@ -28,8 +28,8 @@ export default function KeyFeatures() {
         your applications with the power of Plain React Library and discover a
         new level of simplicity and control in date management.{" "}
         <span className="px-[1px] font-medium text-gray-900 bg-yellow-200">
-          From version 1.1.0, the Plain React Calendar is now compatible with
-          Next js.
+          From version 1.1.0, the Plain React Calendar is compatible with Next
+          js.
         </span>
       </p>
 
