@@ -16,7 +16,7 @@ export default function KeyFeatures() {
       <h2 className="_title">
         Plain React Calendar{" "}
         <span className="p-2 text-[14px] font-semibold rounded-lg text-blue-500 bg-blue-100">
-          New Version: 1.1.1
+          New Version: 1.1.2
         </span>{" "}
       </h2>
       <p className="_description mt-4">
